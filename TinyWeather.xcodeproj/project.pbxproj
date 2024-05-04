@@ -7,18 +7,93 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		207E32B42BC339BE00A2D7C6 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84672D8E2B90C4F9005CC13F /* WeatherData.swift */; };
+		207E32B52BC33AF700A2D7C6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E32B22BC3389500A2D7C6 /* ViewModel.swift */; };
+		20BC06592BC1429B000F3440 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC06582BC1429B000F3440 /* DetailViewModel.swift */; };
 		84672D672B8F7560005CC13F /* TinyWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84672D662B8F7560005CC13F /* TinyWeatherApp.swift */; };
 		84672D692B8F7560005CC13F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84672D682B8F7560005CC13F /* ContentView.swift */; };
 		84672D6B2B8F7562005CC13F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84672D6A2B8F7562005CC13F /* Assets.xcassets */; };
 		84672D6E2B8F7562005CC13F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84672D6D2B8F7562005CC13F /* Preview Assets.xcassets */; };
+		84672D782B8F7631005CC13F /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84672D772B8F7630005CC13F /* SplashScreenView.swift */; };
+		84672D7A2B8F7CD6005CC13F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84672D792B8F7CD6005CC13F /* HomeView.swift */; };
+		84672D7E2B8FA561005CC13F /* CardStack in Frameworks */ = {isa = PBXBuildFile; productRef = 84672D7D2B8FA561005CC13F /* CardStack */; };
+		84672D802B8FAF83005CC13F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84672D7F2B8FAF83005CC13F /* CardView.swift */; };
+		84672D822B8FB647005CC13F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84672D812B8FB647005CC13F /* DetailView.swift */; };
+		84672D842B8FBB3F005CC13F /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84672D832B8FBB3F005CC13F /* CardDetailView.swift */; };
+		84672D872B8FBF12005CC13F /* KMDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84672D862B8FBF12005CC13F /* KMDetail.swift */; };
+		84672D892B8FC1DA005CC13F /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84672D882B8FC1DA005CC13F /* ListRow.swift */; };
+		84672D8F2B90C4F9005CC13F /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84672D8E2B90C4F9005CC13F /* WeatherData.swift */; };
+		84672D942B91126B005CC13F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84672D932B91126B005CC13F /* HomeViewModel.swift */; };
+		84672D9A2B91B086005CC13F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84672D992B91B086005CC13F /* LocationManager.swift */; };
+		84B632032B92418F009F24C5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B632022B92418F009F24C5 /* Extensions.swift */; };
+		84B6320A2B9627BD009F24C5 /* CurrentWeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B632092B9627BD009F24C5 /* CurrentWeatherDataModel.swift */; };
+		84F945552B9CD1C80068B7D0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F945542B9CD1C70068B7D0 /* WidgetKit.framework */; };
+		84F945572B9CD1C80068B7D0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F945562B9CD1C80068B7D0 /* SwiftUI.framework */; };
+		84F9455A2B9CD1C80068B7D0 /* TinyWeatherWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F945592B9CD1C80068B7D0 /* TinyWeatherWidgetBundle.swift */; };
+		84F9455C2B9CD1C80068B7D0 /* TinyWeatherWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9455B2B9CD1C80068B7D0 /* TinyWeatherWidgetLiveActivity.swift */; };
+		84F9455E2B9CD1C80068B7D0 /* TinyWeatherWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9455D2B9CD1C80068B7D0 /* TinyWeatherWidget.swift */; };
+		84F945602B9CD1C80068B7D0 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9455F2B9CD1C80068B7D0 /* AppIntent.swift */; };
+		84F945622B9CD1CA0068B7D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F945612B9CD1CA0068B7D0 /* Assets.xcassets */; };
+		84F945662B9CD1CA0068B7D0 /* TinyWeatherWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 84F945522B9CD1C70068B7D0 /* TinyWeatherWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84F945732B9CF8AC0068B7D0 /* CurrentWeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B632092B9627BD009F24C5 /* CurrentWeatherDataModel.swift */; };
+		84F945742B9CFAC50068B7D0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B632022B92418F009F24C5 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		84F945642B9CD1CA0068B7D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84672D5B2B8F7560005CC13F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F945512B9CD1C70068B7D0;
+			remoteInfo = TinyWeatherWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84F945672B9CD1CA0068B7D0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				84F945662B9CD1CA0068B7D0 /* TinyWeatherWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		207E32B22BC3389500A2D7C6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		207E32D72BC46FFF00A2D7C6 /* TinyWeather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TinyWeather.entitlements; sourceTree = "<group>"; };
+		20BC06582BC1429B000F3440 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		84672D632B8F7560005CC13F /* TinyWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84672D662B8F7560005CC13F /* TinyWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyWeatherApp.swift; sourceTree = "<group>"; };
 		84672D682B8F7560005CC13F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84672D6A2B8F7562005CC13F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84672D6D2B8F7562005CC13F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84672D772B8F7630005CC13F /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		84672D792B8F7CD6005CC13F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		84672D7B2B8F7FE9005CC13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		84672D7F2B8FAF83005CC13F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		84672D812B8FB647005CC13F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		84672D832B8FBB3F005CC13F /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
+		84672D862B8FBF12005CC13F /* KMDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMDetail.swift; sourceTree = "<group>"; };
+		84672D882B8FC1DA005CC13F /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
+		84672D8E2B90C4F9005CC13F /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		84672D932B91126B005CC13F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		84672D992B91B086005CC13F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		84B632022B92418F009F24C5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		84B632092B9627BD009F24C5 /* CurrentWeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherDataModel.swift; sourceTree = "<group>"; };
+		84F945522B9CD1C70068B7D0 /* TinyWeatherWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TinyWeatherWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F945542B9CD1C70068B7D0 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		84F945562B9CD1C80068B7D0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		84F945592B9CD1C80068B7D0 /* TinyWeatherWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyWeatherWidgetBundle.swift; sourceTree = "<group>"; };
+		84F9455B2B9CD1C80068B7D0 /* TinyWeatherWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyWeatherWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		84F9455D2B9CD1C80068B7D0 /* TinyWeatherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyWeatherWidget.swift; sourceTree = "<group>"; };
+		84F9455F2B9CD1C80068B7D0 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		84F945612B9CD1CA0068B7D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84F945632B9CD1CA0068B7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +101,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84672D7E2B8FA561005CC13F /* CardStack in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F9454F2B9CD1C70068B7D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F945572B9CD1C80068B7D0 /* SwiftUI.framework in Frameworks */,
+				84F945552B9CD1C80068B7D0 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				84672D652B8F7560005CC13F /* TinyWeather */,
+				84F945582B9CD1C80068B7D0 /* TinyWeatherWidget */,
+				84F945532B9CD1C70068B7D0 /* Frameworks */,
 				84672D642B8F7560005CC13F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				84672D632B8F7560005CC13F /* TinyWeather.app */,
+				84F945522B9CD1C70068B7D0 /* TinyWeatherWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +139,15 @@
 		84672D652B8F7560005CC13F /* TinyWeather */ = {
 			isa = PBXGroup;
 			children = (
+				207E32D72BC46FFF00A2D7C6 /* TinyWeather.entitlements */,
+				84B632042B939D6B009F24C5 /* Services */,
+				84672D7B2B8F7FE9005CC13F /* Info.plist */,
+				84672D742B8F7615005CC13F /* Views */,
+				84672D762B8F761C005CC13F /* ViewModel */,
+				84672D752B8F7619005CC13F /* Model */,
+				84672D902B90DDF6005CC13F /* Managers */,
+				84B632012B92417E009F24C5 /* Extension */,
 				84672D662B8F7560005CC13F /* TinyWeatherApp.swift */,
-				84672D682B8F7560005CC13F /* ContentView.swift */,
 				84672D6A2B8F7562005CC13F /* Assets.xcassets */,
 				84672D6C2B8F7562005CC13F /* Preview Content */,
 			);
@@ -67,6 +162,93 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		84672D742B8F7615005CC13F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84672D852B8FBECB005CC13F /* Components */,
+				84672D682B8F7560005CC13F /* ContentView.swift */,
+				84672D772B8F7630005CC13F /* SplashScreenView.swift */,
+				84672D792B8F7CD6005CC13F /* HomeView.swift */,
+				84672D7F2B8FAF83005CC13F /* CardView.swift */,
+				84672D832B8FBB3F005CC13F /* CardDetailView.swift */,
+				84672D812B8FB647005CC13F /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84672D752B8F7619005CC13F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84672D8E2B90C4F9005CC13F /* WeatherData.swift */,
+				84B632092B9627BD009F24C5 /* CurrentWeatherDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84672D762B8F761C005CC13F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84672D932B91126B005CC13F /* HomeViewModel.swift */,
+				20BC06582BC1429B000F3440 /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84672D852B8FBECB005CC13F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				84672D862B8FBF12005CC13F /* KMDetail.swift */,
+				84672D882B8FC1DA005CC13F /* ListRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		84672D902B90DDF6005CC13F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				84672D992B91B086005CC13F /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		84B632012B92417E009F24C5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				84B632022B92418F009F24C5 /* Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		84B632042B939D6B009F24C5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84F945532B9CD1C70068B7D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F945542B9CD1C70068B7D0 /* WidgetKit.framework */,
+				84F945562B9CD1C80068B7D0 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84F945582B9CD1C80068B7D0 /* TinyWeatherWidget */ = {
+			isa = PBXGroup;
+			children = (
+				84F945592B9CD1C80068B7D0 /* TinyWeatherWidgetBundle.swift */,
+				84F9455B2B9CD1C80068B7D0 /* TinyWeatherWidgetLiveActivity.swift */,
+				84F9455D2B9CD1C80068B7D0 /* TinyWeatherWidget.swift */,
+				84F9455F2B9CD1C80068B7D0 /* AppIntent.swift */,
+				84F945612B9CD1CA0068B7D0 /* Assets.xcassets */,
+				84F945632B9CD1CA0068B7D0 /* Info.plist */,
+				207E32B22BC3389500A2D7C6 /* ViewModel.swift */,
+			);
+			path = TinyWeatherWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +259,37 @@
 				84672D5F2B8F7560005CC13F /* Sources */,
 				84672D602B8F7560005CC13F /* Frameworks */,
 				84672D612B8F7560005CC13F /* Resources */,
+				84F945672B9CD1CA0068B7D0 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F945652B9CD1CA0068B7D0 /* PBXTargetDependency */,
+			);
+			name = TinyWeather;
+			packageProductDependencies = (
+				84672D7D2B8FA561005CC13F /* CardStack */,
+			);
+			productName = TinyWeather;
+			productReference = 84672D632B8F7560005CC13F /* TinyWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84F945512B9CD1C70068B7D0 /* TinyWeatherWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F9456A2B9CD1CA0068B7D0 /* Build configuration list for PBXNativeTarget "TinyWeatherWidgetExtension" */;
+			buildPhases = (
+				84F9454E2B9CD1C70068B7D0 /* Sources */,
+				84F9454F2B9CD1C70068B7D0 /* Frameworks */,
+				84F945502B9CD1C70068B7D0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TinyWeather;
-			productName = TinyWeather;
-			productReference = 84672D632B8F7560005CC13F /* TinyWeather.app */;
-			productType = "com.apple.product-type.application";
+			name = TinyWeatherWidgetExtension;
+			productName = TinyWeatherWidgetExtension;
+			productReference = 84F945522B9CD1C70068B7D0 /* TinyWeatherWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +304,9 @@
 					84672D622B8F7560005CC13F = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
+					84F945512B9CD1C70068B7D0 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 				};
 			};
 			buildConfigurationList = 84672D5E2B8F7560005CC13F /* Build configuration list for PBXProject "TinyWeather" */;
@@ -111,11 +318,15 @@
 				Base,
 			);
 			mainGroup = 84672D5A2B8F7560005CC13F;
+			packageReferences = (
+				84672D7C2B8FA561005CC13F /* XCRemoteSwiftPackageReference "CardStack" */,
+			);
 			productRefGroup = 84672D642B8F7560005CC13F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				84672D622B8F7560005CC13F /* TinyWeather */,
+				84F945512B9CD1C70068B7D0 /* TinyWeatherWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +341,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84F945502B9CD1C70068B7D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F945622B9CD1CA0068B7D0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,11 +357,47 @@
 			buildActionMask = 2147483647;
 			files = (
 				84672D692B8F7560005CC13F /* ContentView.swift in Sources */,
+				84672D7A2B8F7CD6005CC13F /* HomeView.swift in Sources */,
 				84672D672B8F7560005CC13F /* TinyWeatherApp.swift in Sources */,
+				84672D822B8FB647005CC13F /* DetailView.swift in Sources */,
+				84B6320A2B9627BD009F24C5 /* CurrentWeatherDataModel.swift in Sources */,
+				84672D872B8FBF12005CC13F /* KMDetail.swift in Sources */,
+				84672D782B8F7631005CC13F /* SplashScreenView.swift in Sources */,
+				84672D942B91126B005CC13F /* HomeViewModel.swift in Sources */,
+				84672D8F2B90C4F9005CC13F /* WeatherData.swift in Sources */,
+				84672D802B8FAF83005CC13F /* CardView.swift in Sources */,
+				84672D842B8FBB3F005CC13F /* CardDetailView.swift in Sources */,
+				84672D892B8FC1DA005CC13F /* ListRow.swift in Sources */,
+				84672D9A2B91B086005CC13F /* LocationManager.swift in Sources */,
+				20BC06592BC1429B000F3440 /* DetailViewModel.swift in Sources */,
+				84B632032B92418F009F24C5 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F9454E2B9CD1C70068B7D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F9455A2B9CD1C80068B7D0 /* TinyWeatherWidgetBundle.swift in Sources */,
+				84F945742B9CFAC50068B7D0 /* Extensions.swift in Sources */,
+				207E32B42BC339BE00A2D7C6 /* WeatherData.swift in Sources */,
+				84F945732B9CF8AC0068B7D0 /* CurrentWeatherDataModel.swift in Sources */,
+				84F945602B9CD1C80068B7D0 /* AppIntent.swift in Sources */,
+				84F9455C2B9CD1C80068B7D0 /* TinyWeatherWidgetLiveActivity.swift in Sources */,
+				207E32B52BC33AF700A2D7C6 /* ViewModel.swift in Sources */,
+				84F9455E2B9CD1C80068B7D0 /* TinyWeatherWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84F945652B9CD1CA0068B7D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F945512B9CD1C70068B7D0 /* TinyWeatherWidgetExtension */;
+			targetProxy = 84F945642B9CD1CA0068B7D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		84672D6F2B8F7562005CC13F /* Debug */ = {
@@ -267,19 +522,24 @@
 		84672D722B8F7562005CC13F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TinyWeather/TinyWeather.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TinyWeather/Preview Content\"";
 				DEVELOPMENT_TEAM = 9PS527BMRT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TinyWeather/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Please Allow \"TinyWeather\" to access your location to provide you with accurate weather data";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please Allow \"TinyWeather\" to access your location to provide you with accurate weather data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,6 +547,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Chokaaaa.TinyWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,19 +557,24 @@
 		84672D732B8F7562005CC13F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TinyWeather/TinyWeather.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TinyWeather/Preview Content\"";
 				DEVELOPMENT_TEAM = 9PS527BMRT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TinyWeather/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Please Allow \"TinyWeather\" to access your location to provide you with accurate weather data";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please Allow \"TinyWeather\" to access your location to provide you with accurate weather data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +582,63 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Chokaaaa.TinyWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84F945682B9CD1CA0068B7D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9PS527BMRT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TinyWeatherWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TinyWeatherWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Chokaaaa.TinyWeather.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84F945692B9CD1CA0068B7D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9PS527BMRT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TinyWeatherWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TinyWeatherWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Chokaaaa.TinyWeather.TinyWeatherWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -343,7 +666,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		84F9456A2B9CD1CA0068B7D0 /* Build configuration list for PBXNativeTarget "TinyWeatherWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F945682B9CD1CA0068B7D0 /* Debug */,
+				84F945692B9CD1CA0068B7D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84672D7C2B8FA561005CC13F /* XCRemoteSwiftPackageReference "CardStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/notsobigcompany/CardStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84672D7D2B8FA561005CC13F /* CardStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84672D7C2B8FA561005CC13F /* XCRemoteSwiftPackageReference "CardStack" */;
+			productName = CardStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84672D5B2B8F7560005CC13F /* Project object */;
 }
